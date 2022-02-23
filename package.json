@@ -6,6 +6,13 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "license": "MIT",
+  "description": "a simple parser for javascript math expression",
+  "repository": "github:qiuquanwu/math-expression-parse",
+  "keywords": [
+    "math",
+    "expression",
+    "math-expression-parse"
+  ],
   "devDependencies": {
     "@types/lodash": "^4.14.178",
     "@types/ms": "^0.7.31",
