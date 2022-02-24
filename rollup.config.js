@@ -34,11 +34,6 @@ export default [
       }),
       commonjs(),
       typescript(),
-      strip({
-        include:['**/*.js','**/*.ts'],
-        labels: ['unittest'],
-        functions:[ 'console.*', 'assert.*' ]
-      })
     ],
     output: [
       { file: pkg.main, format: 'cjs' },

@@ -34,6 +34,7 @@
         <section class="suite">
           <h1>#&#x666E;&#x901A;&#x4F7F;&#x7528;</h1>
           <dl>
+jsStr 张三
             <dt>should return &#x5F20;&#x4E09;</dt>
             <dt>D:\workspace\math-expression-parse\test\test.js</dt>
             <dd><pre><code>expect(parse({
@@ -52,6 +53,7 @@
         <section class="suite">
           <h1>#&#x6570;&#x5B66;&#x6C42;&#x548C;sum-2</h1>
           <dl>
+jsStr sum(20,2)
             <dt>should return 22</dt>
             <dt>D:\workspace\math-expression-parse\test\test.js</dt>
             <dd><pre><code>expect(parse({
@@ -62,22 +64,12 @@
         <section class="suite">
           <h1>#&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;</h1>
           <dl>
+jsStr condition(80>60,'及格','不及格')
             <dt>should return &#x53CA;&#x683C;</dt>
             <dt>D:\workspace\math-expression-parse\test\test.js</dt>
             <dd><pre><code>expect(parse({
   &#x22;score&#x22;: 80
 }, &#x22;condition({score}&#x3E;60,&#x27;&#x53CA;&#x683C;&#x27;,&#x27;&#x4E0D;&#x53CA;&#x683C;&#x27;)&#x22;)).to.equal(&#x22;&#x53CA;&#x683C;&#x22;)</code></pre></dd>
-          </dl>
-        </section>
-        <section class="suite">
-          <h1>#&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;-2</h1>
-          <dl>
-            <dt class="error">should return &#x53CA;&#x683C;</dt>
-            <dt class="error">D:\workspace\math-expression-parse\test\test.js</dt>
-            <dd class="error"><pre><code>expect(parse({
-  &#x22;score&#x22;: 80
-}, &#x22;condition({score}&#x3E;60,&#x27;&#x53CA;&#x683C;&#x27;,&#x27;&#x4E0D;&#x53CA;&#x683C;&#x27;)&#x22;)).to.equal(&#x22;&#x22;)</code></pre></dd>
-            <dd class="error">AssertionError: expected &#x27;&#x53CA;&#x683C;&#x27; to equal &#x27;&#x27;</dd>
           </dl>
         </section>
       </dl>

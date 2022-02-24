@@ -31,6 +31,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "test:doc": "mocha --reporter=doc | cat docs/head.html - docs/tail.html > docs/test.html",
     "test": "mocha",
     "pretest": "npm run build"
   },
