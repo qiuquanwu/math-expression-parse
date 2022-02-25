@@ -1,6 +1,6 @@
 {
-  "name": "math-expression-parse",
-  "version": "1.0.0",
+  "name": "js-math-expression",
+  "version": "1.0.1",
   "main": "dist/mep.cjs.js",
   "module": "dist/mep.esm.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,9 @@
   "keywords": [
     "math",
     "expression",
-    "math-expression-parse"
+    "math-expression-parse",
+    "vika",
+    "数学公式解析"
   ],
   "devDependencies": {
     "@rollup/plugin-strip": "^2.1.0",

@@ -1,12 +1,12 @@
 # math-expression-parse(数学表达式解析)
 
 ## 安装
-`npm i math-expression-parse`
+`npm i js-math-expression`
 
 ## 使用
 
 ```js
-import {parse} from "math-expression-parse"
+import {parse} from "js-math-expression"
 
 let data = {
     "字段1":"100",
