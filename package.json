@@ -1,6 +1,6 @@
 {
   "name": "math-expression-parse",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "main": "dist/mep.cjs.js",
   "module": "dist/mep.esm.js",
   "types": "dist/index.d.ts",
