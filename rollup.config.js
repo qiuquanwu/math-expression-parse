@@ -3,6 +3,7 @@ import commonjs from 'rollup-plugin-commonjs'
 import typescript from 'rollup-plugin-typescript'
 import pkg from './package.json'
 import strip from '@rollup/plugin-strip';
+import dts from "rollup-plugin-dts";
 export default [
   // UMD for browser-friendly build
   {
@@ -18,7 +19,8 @@ export default [
         extensions: ['.ts', '.mjs', '.js', '.json', '.node']
       }),
       commonjs(),
-      typescript(),
+      typescript({ tsconfig: './tsconfig.json' }),
+      // dts(),
       strip({
         labels: ['unittest']
       })
@@ -33,11 +35,27 @@ export default [
         extensions: ['.ts', '.mjs', '.js', '.json', '.node']
       }),
       commonjs(),
-      typescript(),
+      typescript({ tsconfig: './tsconfig.json' }),
+      // dts(),
     ],
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' }
+    ]
+  },
+  {
+    input: 'src/index.ts',
+    plugins: [
+      resolve({
+        browser: true,
+        extensions: ['.ts', '.mjs', '.js', '.json', '.node']
+      }),
+      commonjs(),
+      typescript({ tsconfig: './tsconfig.json' }),
+      dts(),
+    ],
+    output: [
+      { file: pkg.types, format: 'esm' },
     ]
   }
 ]
